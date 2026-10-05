@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 10000;
 
 app.use('/', createProxyMiddleware({
-    target: 'http://oyun.hedefsunucu.com:25565', // Buraya bağlanmak istediğin asıl Minecraft sunucusunun adresini yazabilirsin
+    target: 'https://mc-master.onrender.com', // Buraya bağlanmak istediğin asıl Minecraft sunucusunun adresini yazabilirsin
     changeOrigin: true,
     ws: true
 }));
